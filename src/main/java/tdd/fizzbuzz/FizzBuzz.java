@@ -2,22 +2,25 @@ package tdd.fizzbuzz;
 
 
 public class FizzBuzz {
-    private final String FIZZ = "Fizz";
-    private final String BUZZ = "Buzz";
-    private final String WHIZZ = "Whizz";
+    private static final int MODULO_3 = 3;
+    private static final int MODULO_5 = 5;
+    private static final int MODULO_7 = 7;
+    private static final String FIZZ = "Fizz";
+    private static final String BUZZ = "Buzz";
+    private static final String WHIZZ = "Whizz";
 
     public String countOff(int number) {
         String result = "";
 
-        if (number % 3 == 0) {
+        if (number % MODULO_3 == 0) {
             result += FIZZ;
         }
 
-        if (number % 5 == 0) {
+        if (number % MODULO_5 == 0) {
             result += BUZZ;
         }
 
-        if (number % 7 == 0) {
+        if (number % MODULO_7 == 0) {
             result += WHIZZ;
         }
 
